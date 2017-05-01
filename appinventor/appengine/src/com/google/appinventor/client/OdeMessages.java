@@ -2313,6 +2313,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String canvasComponentPallette();
 
+  @DefaultMessage("Chart")
+  @Description("")
+  String chartComponentPallette();
+
   @DefaultMessage("CheckBox")
   @Description("")
   String checkBoxComponentPallette();
@@ -3158,6 +3162,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ShowFilterBar")
   @Description("")
   String ShowFilterBarProperties();
+  
+  @DefaultMessage("ShowChart")
+  @Description("")
+  String ShowChartProperties();
 
   @DefaultMessage("TextSize")
   @Description("")
@@ -5747,6 +5755,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("<p>A two-dimensional touch-sensitive rectangular panel on which drawing can be done and sprites can be moved.</p> <p>The <code>BackgroundColor</code>, <code>PaintColor</code>, <code>BackgroundImage</code>, <code>Width</code>, and <code>Height</code> of the Canvas can be set in either the Designer or in the Blocks Editor.  The <code>Width</code> and <code>Height</code> are measured in pixels and must be positive.</p><p>Any location on the Canvas can be specified as a pair of (X, Y) values, where <ul> <li>X is the number of pixels away from the left edge of the Canvas</li><li>Y is the number of pixels away from the top edge of the Canvas</li></ul>.</p> <p>There are events to tell when and where a Canvas has been touched or a <code>Sprite</code> (<code>ImageSprite</code> or <code>Ball</code>) has been dragged.  There are also methods for drawing points, lines, and circles.</p>")
   @Description("")
   String CanvasHelpStringComponentPallette();
+
+  @DefaultMessage("")
+  @Description("")
+  String ChartHelpStringComponentPallette();
 
   @DefaultMessage("Checkbox that raises an event when the user clicks on it. There are many properties affecting its appearance that can be set in the Designer or Blocks Editor.")
   @Description("")
