@@ -3166,6 +3166,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ShowChart")
   @Description("")
   String ShowChartProperties();
+  
+  @DefaultMessage("AddSingleData")
+  @Description("")
+  String AddSingleDataProperties();
 
   @DefaultMessage("TextSize")
   @Description("")
