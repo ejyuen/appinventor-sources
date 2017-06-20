@@ -4312,13 +4312,21 @@ public interface OdeMessages extends Messages {
   @Description("")
   String widthParams();
 
-  @DefaultMessage("line")
+  @DefaultMessage("series")
   @Description("")
-  String lineParams();
+  String seriesParams();
   
   @DefaultMessage("datapoint")
   @Description("")
   String datapointParams();
+  
+  @DefaultMessage("itemstring")
+  @Description("")
+  String itemstringParams();
+  
+  @DefaultMessage("itemlist")
+  @Description("")
+  String itemlistParams();
 
   //Events
   @DefaultMessage("AccelerationChanged")
@@ -5722,9 +5730,17 @@ public interface OdeMessages extends Messages {
   @Description("")
   String StopSoundMethods();
   
-  @DefaultMessage("AddSingleData")
+  @DefaultMessage("AddData")
   @Description("")
   String AddSingleDataMethods();
+  
+  @DefaultMessage("AddData")
+  @Description("")
+  String AddStringDataMethods();
+  
+  @DefaultMessage("AddData")
+  @Description("")
+  String AddListDataMethods();
   
 
   //Mock Components
