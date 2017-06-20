@@ -5742,6 +5742,13 @@ public interface OdeMessages extends Messages {
   @Description("")
   String AddListDataMethods();
   
+  @DefaultMessage("ClearData")
+  @Description("")
+  String ClearDataMethods();
+
+  @DefaultMessage("ClearAllData")
+  @Description("")
+  String ClearAllDataMethods();
 
   //Mock Components
   @DefaultMessage("add items...")
