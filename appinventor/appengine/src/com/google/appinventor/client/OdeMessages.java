@@ -5744,7 +5744,7 @@ public interface OdeMessages extends Messages {
   
   @DefaultMessage("ClearData")
   @Description("")
-  String ClearDataMethods();
+  String ClearLineDataMethods();
 
   @DefaultMessage("ClearAllData")
   @Description("")
