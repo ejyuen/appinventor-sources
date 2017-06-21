@@ -5749,6 +5749,18 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ClearAllData")
   @Description("")
   String ClearAllDataMethods();
+  
+  @DefaultMessage("SetData")
+  @Description("")
+  String SetSingleDataMethods();
+  
+  @DefaultMessage("SetData")
+  @Description("")
+  String SetStringDataMethods();
+  
+  @DefaultMessage("SetData")
+  @Description("")
+  String SetListDataMethods();
 
   //Mock Components
   @DefaultMessage("add items...")
