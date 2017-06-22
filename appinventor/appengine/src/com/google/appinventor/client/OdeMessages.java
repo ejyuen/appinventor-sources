@@ -5762,6 +5762,14 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SetSeriesColorMethods();
   
+  @DefaultMessage("GetSeriesColor")
+  @Description("")
+  String GetSeriesColorMethods();
+  
+  @DefaultMessage("SetSeriesFill")
+  @Description("")
+  String SetSeriesFillMethods();
+  
 
   //Mock Components
   @DefaultMessage("add items...")
