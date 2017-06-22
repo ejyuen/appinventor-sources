@@ -5770,6 +5770,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String SetSeriesFillMethods();
   
+  @DefaultMessage("GetSeriesFill")
+  @Description("")
+  String GetSeriesFillMethods();
+  
 
   //Mock Components
   @DefaultMessage("add items...")
