@@ -3163,9 +3163,9 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ShowFilterBarProperties();
   
-  @DefaultMessage("ShowChart")
+  @DefaultMessage("ShowLegend")
   @Description("")
-  String ShowChartProperties();
+  String ShowLegendProperties();
   
   @DefaultMessage("AddSingleData")
   @Description("")
