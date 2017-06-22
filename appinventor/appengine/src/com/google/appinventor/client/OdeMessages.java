@@ -3166,10 +3166,6 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ShowLegend")
   @Description("")
   String ShowLegendProperties();
-  
-  @DefaultMessage("AddSingleData")
-  @Description("")
-  String AddSingleDataProperties();
 
   @DefaultMessage("TextSize")
   @Description("")
@@ -5761,6 +5757,11 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("SetData")
   @Description("")
   String SetListDataMethods();
+
+  @DefaultMessage("SetSeriesColor")
+  @Description("")
+  String SetSeriesColorMethods();
+  
 
   //Mock Components
   @DefaultMessage("add items...")
