@@ -3166,6 +3166,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ShowLegend")
   @Description("")
   String ShowLegendProperties();
+  
+  @DefaultMessage("ShowPointLabels")
+  @Description("")
+  String ShowPointLabelsProperties();
 
   @DefaultMessage("TextSize")
   @Description("")
