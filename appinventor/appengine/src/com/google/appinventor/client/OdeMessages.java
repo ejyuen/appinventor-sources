@@ -5750,6 +5750,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ClearAllDataMethods();
   
+  @DefaultMessage("ExportChart")
+  @Description("")
+  String ExportChartMethods();
+  
   @DefaultMessage("SetData")
   @Description("")
   String SetSingleDataMethods();
