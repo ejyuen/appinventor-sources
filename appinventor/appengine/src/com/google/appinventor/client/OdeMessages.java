@@ -5729,6 +5729,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("StopSound")
   @Description("")
   String StopSoundMethods();
+
+  @DefaultMessage("AddXYData")
+  @Description("")
+  String AddXYDataMethods();
   
   @DefaultMessage("AddData")
   @Description("")
