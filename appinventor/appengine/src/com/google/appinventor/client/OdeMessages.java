@@ -3170,6 +3170,18 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("ShowPointLabels")
   @Description("")
   String ShowPointLabelsProperties();
+  
+  @DefaultMessage("Title")
+  @Description("")
+  String ChartTitleProperties();
+  
+  @DefaultMessage("YLabel")
+  @Description("")
+  String ChartYLabelProperties();
+  
+  @DefaultMessage("XLabel")
+  @Description("")
+  String ChartXLabelProperties();
 
   @DefaultMessage("TextSize")
   @Description("")
