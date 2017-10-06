@@ -102,6 +102,10 @@ public interface OdeMessages extends Messages {
   @Description("Label of the button for checkpoint")
   String checkpointButton();
 
+  @DefaultMessage("Toggle Tutorial")
+  @Description("Label for the Toggle Tutorial Button")
+  String toggleTutorialButton();
+
   @DefaultMessage("Add Screen ...")
   @Description("Label of the button for adding a new screen")
   String addFormButton();
@@ -512,6 +516,10 @@ public interface OdeMessages extends Messages {
   @Description("Name of Import component menuitem")
   String importComponentMenuItem();
 
+  @DefaultMessage("Import extension")
+  @Description("String shown in the palette to import an extension")
+  String importExtensionMenuItem();
+
   @DefaultMessage("Build component")
   @Description("Name of Build component menuitem")
   String buildComponentMenuItem();
@@ -557,6 +565,10 @@ public interface OdeMessages extends Messages {
   @Description("Error message reported when no component is selected to import.")
   String noComponentSelectedError();
 
+  @DefaultMessage("Unable to find component \"{0}\" while loading project \"{1}\".")
+  @Description("Error message shown when a project references an unknown component.")
+  String noComponentFound(String componentName, String projectName);
+
   @DefaultMessage("Please enter a url")
   @Description("Error message reported when no url is entered.")
   String noUrlError();
@@ -572,6 +584,26 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Are you really sure you want to delete the component(s): {0}?")
   @Description("Confirmation message for deleting component(s)")
   String confirmDeleteComponents(String componentNames);
+
+  @DefaultMessage("From my computer")
+  @Description("")
+  String componentImportFromComputer();
+
+  @DefaultMessage("URL")
+  @Description("For importing from a URL")
+  String componentImportFromURL();
+
+  @DefaultMessage("The component database in the project \"{0}\" is corrupt.")
+  @Description("Error message when the component database is not valid.")
+  String componentDatabaseCorrupt(String projectName);
+
+  @DefaultMessage("The extension description of \"{0}\" in the project \"{1}\" is corrupt.")
+  @Description("Error message when the component descriptors for an extension are not parsable.")
+  String extensionDescriptorCorrupt(String extensionName, String projectName);
+
+  @DefaultMessage("The project \"{0}\" contains an invalid extension. App Inventor will attempt to continue.")
+  @Description("Error message when an extension descriptor pathname does not have the correct structure.")
+  String invalidExtensionInProject(String projectName);
 
   //Connect
   @DefaultMessage("Connect")
@@ -2284,9 +2316,9 @@ public interface OdeMessages extends Messages {
   @Description("")
   String legoMindstormsComponentPallette();
 
-  @DefaultMessage("External")
+  @DefaultMessage("Extension")
   @Description("")
-  String externalComponentPallette();
+  String extensionComponentPallette();
 
   @DefaultMessage("External Components")
   @Description("")
@@ -2606,6 +2638,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String gameClientComponentPallette();
 
+  @DefaultMessage("password")
+  @Description("")
+  String passwordParams();
+
   @DefaultMessage("SoundRecorder")
   @Description("")
   String soundRecorderComponentPallette();
@@ -2891,6 +2927,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String PhoneNumberProperties();
 
+  @DefaultMessage("PhoneNumber")
+  @Description("")
+  String phoneNumberParams();
+
   @DefaultMessage("PhoneNumberList")
   @Description("")
   String PhoneNumberListProperties();
@@ -3090,6 +3130,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("VersionName")
   @Description("")
   String VersionNameProperties();
+
+  @DefaultMessage("TutorialURL")
+  @Description("")
+  String TutorialURLProperties();
 
   @DefaultMessage("Sizing")
   @Description("")
@@ -3527,6 +3571,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String UsernameProperties();
 
+  @DefaultMessage("username")
+  @Description("")
+  String usernameParams();
+
   @DefaultMessage("XAccel")
   @Description("")
   String XAccelProperties();
@@ -3952,10 +4000,6 @@ public interface OdeMessages extends Messages {
   @Description("")
   String providerParams();
 
-  @DefaultMessage("phoneNumber")
-  @Description("")
-  String phoneNumberParams();
-
   @DefaultMessage("status")
   @Description("")
   String statusParams();
@@ -4236,7 +4280,7 @@ public interface OdeMessages extends Messages {
   @Description("")
   String queryParams();
 
-  @DefaultMessage("ImagePath")
+  @DefaultMessage("imagePath")
   @Description("")
   String imagePathParams();
 
@@ -6160,10 +6204,6 @@ public interface OdeMessages extends Messages {
   @Description("")
   String createWelcomeDialogText();
 
-  @DefaultMessage("<h2>This is the Splash Screen. Make this an iframe to your splash screen.</h2>")
-  @Description("")
-  String createWelcomeDialogMessage();
-
   @DefaultMessage("Continue")
   @Description("")
   String createWelcomeDialogButton();
@@ -6337,6 +6377,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Português do Brasil")
   @Description("")
   String switchToPortugueseBR();
+
+  @DefaultMessage("Nederlands")
+  @Description("")
+  String switchToDutch();
 
   @DefaultMessage("Progress Bar")
   @Description("")

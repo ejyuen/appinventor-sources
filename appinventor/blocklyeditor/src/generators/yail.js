@@ -1,5 +1,5 @@
 // -*- mode: java; c-basic-offset: 2; -*-
-// Copyright 2012 Massachusetts Institute of Technology. All rights reserved.
+// Copyright 2012-2017 Massachusetts Institute of Technology. All rights reserved.
 
 /**
  * @fileoverview Helper functions for generating Yail for blocks.
@@ -371,11 +371,17 @@ Blockly.Yail.getFormPropertiesLines = function(formName, componentJson, includeC
  * @param {Blockly.ComponentDatabase} componentDb The workspace's database of components and types.
  * @returns {Array} code strings
  * @private
+ *
+ * Hack Note (JIS): We do not output a property setter line for the TutorialURL
+ * property. This property is only for use within the designer and has no meaning
+ * within an Android app. It is harmless to output it, once we have deployed a new
+ * companion (version > 2.41). Once such a Companion is deployed, the exception
+ * for TutorialURL below (and this comment) can be removed.
  */
 Blockly.Yail.getPropertySettersLines = function(componentJson, componentName, componentDb) {
   var code = [];
   for (var prop in componentJson) {
-    if (prop.charAt(0) != "$" && prop != "Uuid") {
+    if (prop.charAt(0) != "$" && prop != "Uuid" && prop != "TutorialURL") {
       code.push(Blockly.Yail.getPropertySetterString(componentName, componentJson.$Type, prop, 
         componentJson[prop], componentDb));
     }
@@ -481,9 +487,9 @@ Blockly.Yail.quotifyForREPL = function(s) {
     for (var i = 0; i < len; i++) {
       c = s.charAt(i);
       if (c == '\\') {
-        // If this is \n don't slashify the backslash
+        // If this is \n or \t don't slashify the backslash
         // TODO(user): Make this cleaner and more general
-        if (!(i == lastIndex) && s.charAt(i + 1) == 'n') {
+        if (!(i == lastIndex) && (s.charAt(i + 1) == 'n' || s.charAt(i + 1) == 't')) {
           sb.push(c);
           sb.push(s.charAt(i + 1));
           i = i + 1;
