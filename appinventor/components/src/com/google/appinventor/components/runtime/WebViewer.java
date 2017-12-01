@@ -288,7 +288,7 @@ public final class WebViewer extends AndroidViewComponent {
   /**
    * Determines whether or not to ignore SSL Errors
    *
-   * @param ignoreErrors set to true to ignore SSL errors
+   * @param ignoreSslErrors to true to ignore SSL errors
    */
   @DesignerProperty(editorType = PropertyTypeConstants.PROPERTY_TYPE_BOOLEAN,
       defaultValue = "False")

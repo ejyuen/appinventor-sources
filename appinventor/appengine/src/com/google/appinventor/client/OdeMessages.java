@@ -2654,6 +2654,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String webViewerComponentPallette();
 
+  @DefaultMessage("TestWeb")
+  @Description("")
+  String testWebComponentPallette();
+
   // Component Properties
   @DefaultMessage("AboutScreen")
   @Description("")
@@ -2766,6 +2770,8 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Country")
   @Description("")
   String CountryProperties();
+
+
 
   @DefaultMessage("DataType")
   @Description("")
@@ -4802,6 +4808,10 @@ public interface OdeMessages extends Messages {
   @Description("")
   String ConnectWithUUIDMethods();
 
+  @DefaultMessage("createHTMLFile")
+  @Description("")
+  String createHTMLFileMethods();
+
   @DefaultMessage("Disconnect")
   @Description("")
   String DisconnectMethods();
@@ -6170,6 +6180,10 @@ public interface OdeMessages extends Messages {
   @DefaultMessage("Component for viewing Web pages.  The Home URL can be specified in the Designer or in the Blocks Editor.  The view can be set to follow links when they are tapped, and users can fill in Web forms. Warning: This is not a full browser.  For example, pressing the phone\"s hardware Back key will exit the app, rather than move back in the browser history.<p />You can use the WebViewer.WebViewString property to communicate between your app and Javascript code running in the Webviewer page. In the app, you get and set WebViewString.  In the WebViewer, you include Javascript that references the window.AppInventor object, using the methoods </em getWebViewString()</em> and <em>setWebViewString(text)</em>.  <p />For example, if the WebViewer opens to a page that contains the Javascript command <br /> <em>document.write(\"The answer is\" + window.AppInventor.getWebViewString());</em> <br />and if you set WebView.WebVewString to \"hello\", then the web page will show </br ><em>The answer is hello</em>.  <br />And if the Web page contains Javascript that executes the command <br /><em>window.AppInventor.setWebViewString(\"hello from Javascript\")</em>, <br />then the value of the WebViewString property will be <br /><em>hello from Javascript</em>. ")
   @Description("")
   String WebViewerHelpStringComponentPallette();
+
+  @DefaultMessage("TestWeb playground for WebViewer")
+  @Description("")
+  String TestWebHelpStringComponentPallette();
 
   @DefaultMessage("Use this component to translate words and sentences between different languages. This component needs Internet access, as it will request translations to the Yandex.Translate service. Specify the source and target language in the form source-target using two letter language codes. So\"en-es\" will translate from English to Spanish while \"es-ru\" will translate from Spanish to Russian. If you leave out the source language, the service will attempt to detect the source language. So providing just \"es\" will attempt to detect the source language and translate it to Spanish.<p /> This component is powered by the Yandex translation service.  See http://api.yandex.com/translate/ for more information, including the list of available languages and the meanings of the language codes and status codes. <p />Note: Translation happens asynchronously in the background. When the translation is complete, the \"GotTranslation\" event is triggered.")
   @Description("")

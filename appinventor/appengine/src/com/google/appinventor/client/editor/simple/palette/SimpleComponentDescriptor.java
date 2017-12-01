@@ -10,37 +10,7 @@ import com.google.appinventor.client.Images;
 import com.google.appinventor.client.Ode;
 import com.google.appinventor.client.editor.simple.SimpleComponentDatabase;
 import com.google.appinventor.client.editor.simple.SimpleEditor;
-import com.google.appinventor.client.editor.simple.components.MockBall;
-import com.google.appinventor.client.editor.simple.components.MockButton;
-import com.google.appinventor.client.editor.simple.components.MockCanvas;
-import com.google.appinventor.client.editor.simple.components.MockChart;
-import com.google.appinventor.client.editor.simple.components.MockCheckBox;
-import com.google.appinventor.client.editor.simple.components.MockComponent;
-import com.google.appinventor.client.editor.simple.components.MockContactPicker;
-import com.google.appinventor.client.editor.simple.components.MockDatePicker;
-import com.google.appinventor.client.editor.simple.components.MockEmailPicker;
-import com.google.appinventor.client.editor.simple.components.MockFirebaseDB;
-import com.google.appinventor.client.editor.simple.components.MockHorizontalArrangement;
-import com.google.appinventor.client.editor.simple.components.MockImage;
-import com.google.appinventor.client.editor.simple.components.MockImagePicker;
-import com.google.appinventor.client.editor.simple.components.MockImageSprite;
-import com.google.appinventor.client.editor.simple.components.MockLabel;
-import com.google.appinventor.client.editor.simple.components.MockListPicker;
-import com.google.appinventor.client.editor.simple.components.MockListView;
-import com.google.appinventor.client.editor.simple.components.MockNonVisibleComponent;
-import com.google.appinventor.client.editor.simple.components.MockPasswordTextBox;
-import com.google.appinventor.client.editor.simple.components.MockPhoneNumberPicker;
-import com.google.appinventor.client.editor.simple.components.MockRadioButton;
-import com.google.appinventor.client.editor.simple.components.MockScrollHorizontalArrangement;
-import com.google.appinventor.client.editor.simple.components.MockScrollVerticalArrangement;
-import com.google.appinventor.client.editor.simple.components.MockSlider;
-import com.google.appinventor.client.editor.simple.components.MockSpinner;
-import com.google.appinventor.client.editor.simple.components.MockTableArrangement;
-import com.google.appinventor.client.editor.simple.components.MockTextBox;
-import com.google.appinventor.client.editor.simple.components.MockTimePicker;
-import com.google.appinventor.client.editor.simple.components.MockVerticalArrangement;
-import com.google.appinventor.client.editor.simple.components.MockVideoPlayer;
-import com.google.appinventor.client.editor.simple.components.MockWebViewer;
+import com.google.appinventor.client.editor.simple.components.*;
 
 import com.google.appinventor.shared.storage.StorageUtil;
 import com.google.common.collect.Maps;
@@ -373,6 +343,8 @@ public final class SimpleComponentDescriptor {
       return new MockImagePicker(editor);
     } else if (name.equals(MockVideoPlayer.TYPE)) {
       return new MockVideoPlayer(editor);
+    }else if (name.equals(MockTestWeb.TYPE)){
+      return new MockTestWeb(editor);
     } else if (name.equals(MockWebViewer.TYPE)) {
       return new MockWebViewer(editor);
     } else if (name.equals(MockSpinner.TYPE)) {
